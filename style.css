@@ -1,0 +1,981 @@
+/* =====================================================
+   RESET
+===================================================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* =====================================================
+   BODY
+===================================================== */
+
+body {
+    min-height: 100vh;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eaf1f2 0%,
+            #f7f9f8 50%,
+            #e3ecee 100%
+        );
+
+    font-family:
+        "Segoe UI",
+        "Noto Sans Bengali",
+        Arial,
+        sans-serif;
+
+    color: #164b57;
+
+    padding: 30px 15px;
+}
+
+
+/* =====================================================
+   PAGE
+===================================================== */
+
+.page {
+    width: 100%;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: flex-start;
+}
+
+
+/* =====================================================
+   MAIN SHEET
+===================================================== */
+
+.homework-sheet {
+
+    width: 100%;
+
+    max-width: 760px;
+
+    background: #ffffff;
+
+    padding: 28px 42px 30px;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 15px 35px rgba(0, 45, 55, 0.15);
+
+    border: 1px solid #d9e2e4;
+
+    position: relative;
+
+    overflow: hidden;
+}
+
+
+/* =====================================================
+   TOP LINE
+===================================================== */
+
+.homework-sheet::before {
+
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 5px;
+
+    background: #124b58;
+}
+
+
+/* =====================================================
+   HEADER
+===================================================== */
+
+.header {
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 18px;
+
+    text-align: center;
+
+    padding-top: 3px;
+
+    margin-bottom: 8px;
+}
+
+
+.logo-box {
+
+    width: 72px;
+    height: 72px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    flex-shrink: 0;
+}
+
+
+.logo-icon {
+
+    width: 58px;
+    height: 58px;
+
+    border-radius: 50%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    background:
+        radial-gradient(
+            circle,
+            #ffffff 30%,
+            #dcebea 31%,
+            #9ebbbb 100%
+        );
+
+    color: #14515d;
+
+    font-size: 38px;
+
+    border: 2px solid #185460;
+
+    box-shadow:
+        0 4px 10px rgba(0, 0, 0, 0.12);
+}
+
+
+.header-text {
+    text-align: left;
+}
+
+
+.header h1 {
+
+    color: #124b58;
+
+    font-size: 31px;
+
+    font-weight: 800;
+
+    line-height: 1.15;
+
+    margin-bottom: 3px;
+}
+
+
+.header h2 {
+
+    color: #164b57;
+
+    font-size: 25px;
+
+    font-weight: 700;
+
+    line-height: 1.3;
+}
+
+
+/* =====================================================
+   ADDRESS
+===================================================== */
+
+.address {
+
+    width: 100%;
+
+    text-align: center;
+
+    background: #124b58;
+
+    color: #ffffff;
+
+    border-radius: 4px;
+
+    padding: 5px 10px;
+
+    font-size: 12px;
+
+    letter-spacing: 0.3px;
+
+    margin-bottom: 15px;
+}
+
+
+/* =====================================================
+   CLASS + DATE
+===================================================== */
+
+.info-row {
+
+    width: 100%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    margin-bottom: 22px;
+
+    padding: 0 15px;
+}
+
+
+.info-item {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 6px;
+
+    color: #164b57;
+
+    font-size: 15px;
+
+    white-space: nowrap;
+}
+
+
+.info-item strong {
+
+    font-weight: 700;
+}
+
+
+.info-input {
+
+    width: 140px;
+}
+
+
+.date-input {
+
+    width: 140px;
+}
+
+
+.info-input,
+.date-input {
+
+    height: 30px;
+
+    border: 1px solid #71929a;
+
+    border-radius: 2px;
+
+    outline: none;
+
+    background: #ffffff;
+
+    color: #164b57;
+
+    padding: 4px 8px;
+
+    font-size: 13px;
+
+    font-family: inherit;
+
+    transition: 0.2s;
+}
+
+
+.info-input:focus,
+.date-input:focus {
+
+    border-color: #124b58;
+
+    box-shadow:
+        0 0 0 2px rgba(18, 75, 88, 0.12);
+}
+
+
+/* =====================================================
+   TITLE
+===================================================== */
+
+.sheet-title {
+
+    width: 400px;
+
+    max-width: 90%;
+
+    margin: 0 auto 32px;
+
+    text-align: center;
+
+    background: #124b58;
+
+    color: #ffffff;
+
+    font-size: 27px;
+
+    font-weight: 800;
+
+    padding: 8px 15px;
+
+    border-radius: 9px;
+
+    box-shadow:
+        0 6px 10px rgba(0, 0, 0, 0.22);
+}
+
+
+/* =====================================================
+   TABLE
+===================================================== */
+
+.table-container {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+    box-shadow:
+        0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+
+.homework-table {
+
+    width: 100%;
+
+    border-collapse: collapse;
+
+    table-layout: fixed;
+
+    background: #ffffff;
+
+    border: 1px solid #55757d;
+}
+
+
+/* =====================================================
+   TABLE HEADER
+===================================================== */
+
+.homework-table th {
+
+    height: 48px;
+
+    background: #ffffff;
+
+    color: #164b57;
+
+    border: 1px solid #55757d;
+
+    font-size: 22px;
+
+    font-weight: 800;
+
+    text-align: center;
+
+    padding: 8px;
+}
+
+
+/* =====================================================
+   TABLE CELLS
+===================================================== */
+
+.homework-table td {
+
+    height: 48px;
+
+    border: 1px solid #718b91;
+
+    color: #164b57;
+
+    font-size: 20px;
+
+    padding: 0;
+}
+
+
+.homework-table td:first-child {
+
+    width: 32%;
+
+    text-align: center;
+
+    font-weight: 600;
+
+    background: #ffffff;
+}
+
+
+.homework-table td:last-child {
+
+    width: 68%;
+
+    background: #ffffff;
+}
+
+
+/* =====================================================
+   LESSON INPUT
+===================================================== */
+
+.lesson-input {
+
+    width: 100%;
+
+    height: 46px;
+
+    border: none;
+
+    outline: none;
+
+    background: transparent;
+
+    padding: 5px 25px;
+
+    color: #164b57;
+
+    font-size: 19px;
+
+    font-family:
+        "Segoe UI",
+        "Noto Sans Bengali",
+        Arial,
+        sans-serif;
+
+    font-weight: 500;
+}
+
+
+.lesson-input::placeholder {
+
+    color: #b6bdc0;
+
+    opacity: 1;
+
+    font-weight: 600;
+}
+
+
+.lesson-input:focus {
+
+    background: #f0f7f8;
+
+    box-shadow:
+        inset 0 0 0 2px #8caeb5;
+}
+
+
+/* =====================================================
+   BUTTON
+===================================================== */
+
+.button-area {
+
+    display: flex;
+
+    justify-content: center;
+
+    margin-top: 45px;
+
+    margin-bottom: 20px;
+}
+
+
+.print-button {
+
+    min-width: 140px;
+
+    border: none;
+
+    background: #124b58;
+
+    color: #ffffff;
+
+    border-radius: 5px;
+
+    padding: 10px 25px;
+
+    font-size: 18px;
+
+    font-weight: 700;
+
+    font-family: inherit;
+
+    cursor: pointer;
+
+    box-shadow:
+        0 5px 9px rgba(0, 0, 0, 0.25);
+
+    transition:
+        transform 0.2s,
+        background 0.2s,
+        box-shadow 0.2s;
+}
+
+
+.print-button:hover {
+
+    background: #176273;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 7px 12px rgba(0, 0, 0, 0.28);
+}
+
+
+.print-button:active {
+
+    transform: translateY(1px);
+
+    box-shadow:
+        0 3px 6px rgba(0, 0, 0, 0.22);
+}
+
+
+/* =====================================================
+   FOOTER
+===================================================== */
+
+.footer {
+
+    text-align: center;
+
+    color: #527078;
+
+    border-top: 1px solid #d5dfe1;
+
+    padding-top: 13px;
+
+    font-size: 13px;
+
+    line-height: 1.7;
+}
+
+
+.footer span {
+
+    margin-left: 5px;
+}
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+@media (max-width: 700px) {
+
+    body {
+
+        padding: 15px 8px;
+
+    }
+
+
+    .homework-sheet {
+
+        padding: 25px 22px 25px;
+
+    }
+
+
+    .header h1 {
+
+        font-size: 26px;
+
+    }
+
+
+    .header h2 {
+
+        font-size: 21px;
+
+    }
+
+
+    .logo-box {
+
+        width: 60px;
+        height: 60px;
+
+    }
+
+
+    .logo-icon {
+
+        width: 50px;
+        height: 50px;
+
+        font-size: 32px;
+
+    }
+
+
+    .homework-table th {
+
+        font-size: 19px;
+
+    }
+
+
+    .homework-table td {
+
+        font-size: 18px;
+
+    }
+
+
+    .lesson-input {
+
+        font-size: 17px;
+
+    }
+
+}
+
+
+/* =====================================================
+   PHONE
+===================================================== */
+
+@media (max-width: 520px) {
+
+    body {
+
+        padding: 8px;
+
+    }
+
+
+    .homework-sheet {
+
+        padding: 20px 10px 22px;
+
+        border-radius: 6px;
+
+    }
+
+
+    .header {
+
+        gap: 8px;
+
+    }
+
+
+    .logo-box {
+
+        width: 48px;
+        height: 48px;
+
+    }
+
+
+    .logo-icon {
+
+        width: 42px;
+        height: 42px;
+
+        font-size: 26px;
+
+    }
+
+
+    .header-text {
+
+        text-align: center;
+
+    }
+
+
+    .header h1 {
+
+        font-size: 20px;
+
+    }
+
+
+    .header h2 {
+
+        font-size: 17px;
+
+    }
+
+
+    .address {
+
+        font-size: 9px;
+
+        padding: 5px 3px;
+
+    }
+
+
+    .info-row {
+
+        padding: 0 5px;
+
+        gap: 8px;
+
+    }
+
+
+    .info-item {
+
+        font-size: 12px;
+
+    }
+
+
+    .info-input,
+    .date-input {
+
+        width: 90px;
+
+        height: 27px;
+
+        font-size: 11px;
+
+        padding: 3px 5px;
+
+    }
+
+
+    .sheet-title {
+
+        width: 260px;
+
+        margin-bottom: 22px;
+
+        font-size: 20px;
+
+        padding: 7px 8px;
+
+    }
+
+
+    .homework-table th {
+
+        height: 40px;
+
+        font-size: 16px;
+
+        padding: 5px;
+
+    }
+
+
+    .homework-table td {
+
+        height: 42px;
+
+        font-size: 15px;
+
+    }
+
+
+    .lesson-input {
+
+        height: 40px;
+
+        padding: 4px 10px;
+
+        font-size: 14px;
+
+    }
+
+
+    .button-area {
+
+        margin-top: 28px;
+
+    }
+
+
+    .print-button {
+
+        font-size: 16px;
+
+        padding: 9px 22px;
+
+    }
+
+
+    .footer {
+
+        font-size: 10px;
+
+    }
+
+}
+
+
+/* =====================================================
+   PRINT
+===================================================== */
+
+@media print {
+
+    @page {
+
+        size: A4 portrait;
+
+        margin: 8mm;
+
+    }
+
+
+    * {
+
+        -webkit-print-color-adjust: exact !important;
+
+        print-color-adjust: exact !important;
+
+    }
+
+
+    body {
+
+        background: #ffffff !important;
+
+        padding: 0 !important;
+
+        margin: 0 !important;
+
+    }
+
+
+    .page {
+
+        display: block;
+
+        width: 100%;
+
+    }
+
+
+    .homework-sheet {
+
+        width: 100%;
+
+        max-width: none;
+
+        box-shadow: none;
+
+        border: none;
+
+        border-radius: 0;
+
+        padding: 8mm;
+
+        margin: 0;
+
+    }
+
+
+    .button-area {
+
+        display: none !important;
+
+    }
+
+
+    .homework-sheet::before {
+
+        display: none;
+
+    }
+
+
+    .header h1 {
+
+        font-size: 25px;
+
+    }
+
+
+    .header h2 {
+
+        font-size: 21px;
+
+    }
+
+
+    .address {
+
+        font-size: 10px;
+
+    }
+
+
+    .info-row {
+
+        margin-bottom: 15px;
+
+    }
+
+
+    .sheet-title {
+
+        font-size: 22px;
+
+        margin-bottom: 20px;
+
+    }
+
+
+    .homework-table th {
+
+        font-size: 17px;
+
+        height: 40px;
+
+    }
+
+
+    .homework-table td {
+
+        height: 42px;
+
+        font-size: 16px;
+
+    }
+
+
+    .lesson-input {
+
+        height: 40px;
+
+        font-size: 15px;
+
+    }
+
+
+    .footer {
+
+        font-size: 9px;
+
+    }
+
+}
